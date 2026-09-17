@@ -3,165 +3,163 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="HariOps — SaaS untuk operator tour & aktivitas di Indonesia. WhatsApp inquiry ke deposit QRIS ke roster harian.">
-  <title>HariOps — Dari WhatsApp ke roster berbayar</title>
+  <meta name="description" content="HariOps — tools untuk operator tour & aktivitas di Indonesia. Dari chat WhatsApp ke deposit QRIS ke roster hari-H.">
+  <title>HariOps — WA → QRIS → roster</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content / Loncat ke konten</a>
+  <a class="skip-link" href="#main">Loncat ke konten</a>
 
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="logo" href="./" aria-label="HariOps home">HariOps</a>
-      <nav class="nav" aria-label="Primary">
-        <a href="#offer">Cara kerja</a>
-        <a href="#cta" class="nav-cta">Coba gratis</a>
-      </nav>
+      <a class="logo" href="./">HariOps</a>
+      <a class="btn btn-wa header-wa" href="https://wa.me/6200000000000" target="_blank" rel="noopener">Chat WhatsApp</a>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero" id="top">
-      <div class="wrap">
-        <p class="eyebrow">Indonesia-first · Tour &amp; activity SaaS</p>
-        <h1>WhatsApp masuk. Deposit QRIS. Roster siap.</h1>
-        <p class="lede">HariOps bantu operator tour &amp; aktivitas ubah chat WA jadi deposit terbayar dan roster harian yang rapi. Self-serve — tanpa spreadsheet.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary btn-block btn-block-sm" href="#cta">Coba gratis</a>
-          <a class="btn btn-ghost btn-block btn-block-sm" href="https://wa.me/6200000000000" target="_blank" rel="noopener">Chat WhatsApp</a>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Untuk operator tour &amp; aktivitas · Indonesia</p>
+          <h1>Dari chat WhatsApp ke roster yang sudah bayar</h1>
+          <p class="lede">Catat inquiry, kirim deposit QRIS, lalu lihat siapa yang benar-benar berangkat hari itu — tanpa spreadsheet dan screenshot transfer.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/6200000000000" target="_blank" rel="noopener">Chat WhatsApp</a>
+            <a class="btn btn-ghost" href="#offer">Lihat cara kerja</a>
+          </div>
+          <p class="micro">Nomor WhatsApp masih placeholder — ganti setelah kontak asli dari Kris.</p>
         </div>
-        <p class="micro">Satu jalur: inquiry → bayar → roster. Nomor WA masih placeholder.</p>
-        <div class="trust-row" aria-label="Trust">
-          <span><strong>HTTPS</strong> ready</span>
-          <span><strong>WA</strong> contact di halaman</span>
-          <span><strong>ID-first</strong> untuk operator lokal</span>
-        </div>
-      </div>
-    </section>
 
-    <section class="section" id="problem">
-      <div class="wrap">
-        <h2>Operasi harian jangan tenggelam di chat</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Lead WA hilang</h3>
-            <p>Inquiry numpuk di banyak HP dan grup. Lead hangat dingin saat kamu di trip.</p>
-          </article>
-          <article class="card">
-            <h3>Deposit tidak jelas</h3>
-            <p>Link QRIS manual dan “transfer dulu ya” bikin susah tahu siapa yang sudah bayar.</p>
-          </article>
-          <article class="card">
-            <h3>Roster berantakan</h3>
-            <p>Nama tamu tersebar di notes, Excel, dan group chat — guide dapat daftar salah.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="offer">
-      <div class="wrap">
-        <h2>Satu alur: WA → QRIS → roster</h2>
-        <p class="section-intro">Produk software untuk operator — bukan jasa agency. Pakai cara jual yang sudah kamu pakai, jalankan hari-H dari satu tempat.</p>
-        <ol class="steps">
-          <li>
-            <span class="step-num" aria-hidden="true">1</span>
-            <div>
-              <h3>Tangkap inquiry</h3>
-              <p>Masukkan lead dari WhatsApp ke pipeline jelas supaya tiap chat punya langkah berikutnya.</p>
+        <div class="hero-mock reveal delay-1" aria-label="Contoh antarmuka produk">
+          <div class="mock-flow" aria-hidden="true">
+            <span class="chip">WA inquiry</span>
+            <span class="flow-arrow">→</span>
+            <span class="chip chip-warn">QRIS</span>
+            <span class="flow-arrow">→</span>
+            <span class="chip chip-paid">Roster</span>
+          </div>
+          <div class="mock-panel">
+            <div class="mock-panel-head">
+              <strong>Roster · Besok</strong>
+              <span class="mock-date">18 Sep</span>
             </div>
-          </li>
-          <li>
-            <span class="step-num" aria-hidden="true">2</span>
-            <div>
-              <h3>Tarik deposit QRIS</h3>
-              <p>Kirim permintaan bayar, konfirmasi lunas, berhenti kejar screenshot transfer.</p>
-            </div>
-          </li>
-          <li>
-            <span class="step-num" aria-hidden="true">3</span>
-            <div>
-              <h3>Kunci roster hari itu</h3>
-              <p>Tamu berbayar masuk roster — siap untuk guide, boat, dan pickup.</p>
-            </div>
-          </li>
-        </ol>
+            <table class="roster-table">
+              <thead>
+                <tr>
+                  <th>Tamu</th>
+                  <th>Aktivitas</th>
+                  <th>Pax</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Ayu &amp; friends</td>
+                  <td>Sunrise trek</td>
+                  <td>4</td>
+                  <td><span class="badge badge-paid">Paid</span></td>
+                </tr>
+                <tr>
+                  <td>Marcus T.</td>
+                  <td>Snorkel Nusa</td>
+                  <td>2</td>
+                  <td><span class="badge badge-paid">Paid</span></td>
+                </tr>
+                <tr class="dim">
+                  <td>Rina</td>
+                  <td>Ubud day</td>
+                  <td>3</td>
+                  <td><span class="badge badge-warn">Unpaid</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="mock-note">Contoh UI — data fiktif untuk demo produk.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="proof">
+    <section class="section strip-section" id="offer">
       <div class="wrap">
-        <h2>Dirancang untuk operator</h2>
-        <p class="section-intro placeholder-note">Placeholder proof — ganti dengan logo &amp; kutipan nyata nanti.</p>
-        <div class="logos" aria-label="Partner logos placeholder">
-          <div class="logo-slot" role="img" aria-label="Partner logo placeholder">Logo</div>
-          <div class="logo-slot" role="img" aria-label="Partner logo placeholder">Logo</div>
-          <div class="logo-slot" role="img" aria-label="Partner logo placeholder">Logo</div>
-          <div class="logo-slot" role="img" aria-label="Partner logo placeholder">Logo</div>
-        </div>
-        <div class="quotes">
-          <blockquote>
-            <p>“Placeholder — akhirnya kami tahu siapa yang sudah bayar sebelum berangkat.”</p>
-            <footer>— Nama operator, Kota / pulau</footer>
-          </blockquote>
-          <blockquote>
-            <p>“Placeholder — dari WhatsApp ke roster tanpa spreadsheet baru.”</p>
-            <footer>— Nama operator, Kota / pulau</footer>
-          </blockquote>
+        <h2 class="reveal">Tiga langkah. Satu alur.</h2>
+        <p class="section-intro reveal">Bukan marketplace wisatawan. Tools untuk kamu yang jual lewat WhatsApp.</p>
+        <div class="flow-strip">
+          <article class="flow-card reveal">
+            <div class="flow-visual flow-wa" aria-hidden="true">
+              <div class="bubble in">Sunrise trek 4 pax?</div>
+              <div class="bubble out">Bisa — deposit dulu ya</div>
+            </div>
+            <h3>1. Inquiry masuk</h3>
+            <p>Simpan nama, tanggal, pax, dan nominal dari chat WA.</p>
+          </article>
+          <article class="flow-card reveal delay-1">
+            <div class="flow-visual flow-pay" aria-hidden="true">
+              <div class="qris-box">
+                <span class="qris-mark">QRIS</span>
+                <strong>Rp 450.000</strong>
+                <span class="badge badge-warn">Menunggu</span>
+              </div>
+            </div>
+            <h3>2. Deposit QRIS</h3>
+            <p>Kirim link bayar. Status jelas: menunggu atau sudah lunas.</p>
+          </article>
+          <article class="flow-card reveal delay-2">
+            <div class="flow-visual flow-roster" aria-hidden="true">
+              <div class="mini-row"><span></span><span class="badge badge-paid">Paid</span></div>
+              <div class="mini-row"><span></span><span class="badge badge-paid">Paid</span></div>
+            </div>
+            <h3>3. Roster hari-H</h3>
+            <p>Filter tanggal. Tampilkan yang sudah bayar untuk guide &amp; pickup.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section cta-section" id="cta">
-      <div class="wrap cta-inner">
-        <h2>Siap coba HariOps?</h2>
-        <p>Self-serve signup segera. Untuk sekarang, chat WA atau kirim minat singkat.</p>
-        <div class="cta-actions">
-          <a class="btn btn-primary" href="https://wa.me/6200000000000" target="_blank" rel="noopener">Chat WhatsApp</a>
-          <a class="btn btn-ghost" href="mailto:hello@hariops.example?subject=HariOps%20interest">Email kami</a>
+    <section class="section section-tight" id="problem">
+      <div class="wrap problem-grid">
+        <h2 class="reveal">Kenapa ribet sekarang</h2>
+        <ul class="problem-list reveal">
+          <li>Lead WA tercecer di banyak HP dan grup.</li>
+          <li>Deposit lewat chat — sulit tahu siapa yang sudah transfer.</li>
+          <li>Roster hari-H disusun ulang dari notes + Excel.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section cta-band" id="cta">
+      <div class="wrap cta-band-inner reveal">
+        <div>
+          <h2>Mau ikut early access?</h2>
+          <p>Chat kami di WhatsApp. Signup self-serve belum dibuka — jangan “Coba gratis” dulu.</p>
+          <p class="micro">Kontak email belum dipasang sampai Leo dapat alamat asli dari Kris.</p>
         </div>
-        <form class="contact" id="interest-form" action="mailto:hello@hariops.example" method="get" enctype="text/plain" novalidate>
-          <input type="hidden" name="subject" value="HariOps interest">
-          <label>
-            Nama
-            <input type="text" name="name" id="field-name" autocomplete="name" required placeholder="Nama kamu / usaha">
-          </label>
-          <label>
-            WhatsApp
-            <input type="tel" name="whatsapp" id="field-wa" autocomplete="tel" inputmode="tel" required placeholder="08…">
-          </label>
-          <label>
-            Pesan singkat
-            <textarea name="body" id="field-msg" rows="3" required placeholder="Jenis tour/aktivitas &amp; volume kira-kira"></textarea>
-          </label>
-          <p class="error" id="form-error" role="alert">Lengkapi nama, WhatsApp, dan pesan singkat.</p>
-          <p class="micro">Form mailto statis — ganti endpoint saat backend siap. Field sengaja sedikit.</p>
-          <button type="submit" class="btn btn-primary">Kirim minat</button>
-        </form>
+        <a class="btn btn-primary btn-lg" href="https://wa.me/6200000000000" target="_blank" rel="noopener">Chat WhatsApp</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="wrap footer-inner">
-      <span>© <span id="year">2026</span> HariOps — placeholder brand</span>
-      <span><a href="https://wa.me/6200000000000">WhatsApp</a> · Indonesia-first</span>
+      <span>© <span id="year">2026</span> HariOps · placeholder brand</span>
+      <span>HTML/CSS · <a href="DESIGN.md">DESIGN.md</a></span>
     </div>
   </footer>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-    var form = document.getElementById('interest-form');
-    form.addEventListener('submit', function (e) {
-      var name = document.getElementById('field-name').value.trim();
-      var wa = document.getElementById('field-wa').value.trim();
-      var msg = document.getElementById('field-msg').value.trim();
-      if (!name || !wa || !msg) {
-        e.preventDefault();
-        form.classList.add('is-invalid');
-        return;
-      }
-      form.classList.remove('is-invalid');
-    });
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) e.target.classList.add('is-visible');
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+    } else {
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-visible'); });
+    }
   </script>
 </body>
 </html>

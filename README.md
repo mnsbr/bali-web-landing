@@ -1,35 +1,23 @@
 # HariOps landing
 
-Static product landing for **HariOps** — Indonesia-first SaaS for tour & activity operators (WhatsApp → QRIS deposit → day roster).
+Static product landing for **HariOps** (placeholder brand) — Indonesia tour/activity operator tool: WhatsApp → QRIS deposit → day roster.
 
-Placeholder brand until marketing locks the final name.
+Live: https://mnsbr.github.io/bali-web-landing/
 
 ## Stack
 
-Plain HTML + CSS. No build step. UX oriented to [UXDT guidelines](https://www.uxdt.nic.in/guidelines/) (mobile-first, task-oriented CTAs, a11y basics).
+Plain HTML + CSS. See `DESIGN.md` (anti-slop rules + project tokens).
 
-## Design tokens
+## CTA policy
 
-CSS variables in `styles.css` (`:root`) — colors, type, spacing, `--tap-min` (48px). Reuse the same names in the Rails app later.
+Until self-serve signup exists, primary CTA is **Chat WhatsApp** (waitlist). No fake “Start free”. Email/mailto hidden until Kris provides a real address.
 
-## Files
-
-| File | Purpose |
-|------|---------|
-| `index.html` | Landing (hero CTA above fold, problem, offer, proof, CTA) |
-| `styles.css` | Tokens + layout |
-| `README.md` | This file |
-
-## Run locally
+## Run
 
 ```bash
 python3 -m http.server 8080
 ```
 
-Visit http://localhost:8080
+## Edit contacts
 
-Live: https://mnsbr.github.io/bali-web-landing/
-
-## Edit copy / brand
-
-Search `HariOps`, `6200000000000`, and `hariops.example` in `index.html`.
+Search `6200000000000` in `index.html` when the real WhatsApp number lands.
