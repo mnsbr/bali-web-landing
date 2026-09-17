@@ -1,16 +1,14 @@
-# HariOps landing design
+# HariOps landing
 
-North star rhythm: airy product marketing (inspired by antigravity.google) — white canvas, large type hierarchy, thin nav, dark pill CTAs, generous whitespace. Not a Google clone.
+North star: Antigravity-like product air — white canvas, medium-weight large type, thin nav, black pill CTAs, massive whitespace. Not a Google brand clone.
 
 ## Tokens
-- bg `#FFFFFF` / soft `#FAFAFA`
-- text `#18181B` / muted `#71717A`
-- CTA dark pill `#18181B` (not mint, not loud amber fills on page chrome)
-- WA chat bubble `#DCF8C6` only inside mock chat
-- Type: **Inter** (intentional adult UI stack) + IBM Plex Mono for amounts
+- bg `#FFFFFF` / soft `#FAFAF9`
+- text `#0A0A0A` / muted `#737373`
+- CTA `#0A0A0A` dark pill
+- Amber `#F59E0B` sparse only (not page chrome)
+- WA bubble `#DCF8C6` inside chat mock only
+- Type: Inter 400–600 + IBM Plex Mono amounts
 
-## Product story
-Bahasa HariOps: WhatsApp → QRIS DP → roster lunas.
-
-## Mascot
-**Hari** — compact rooster + roster card SVG; keep small/muted so it doesn’t read childish.
+## Mascot Hari
+Favicon + footer mark only — not in hero/CTA.
