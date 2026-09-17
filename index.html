@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="HariOps — tools operator tour & aktivitas. Dari chat WhatsApp ke deposit QRIS ke roster yang sudah lunas.">
-  <title>HariOps — Roster yang sudah lunas</title>
+  <meta name="description" content="HariOps — dari chat WhatsApp ke deposit QRIS ke roster yang sudah lunas. Tools untuk operator tour & aktivitas di Indonesia.">
+  <title>HariOps — WA → QRIS → roster lunas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
@@ -16,25 +16,30 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="logo" href="./">HariOps</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#how">Cara kerja</a>
+        <a href="#faq">FAQ</a>
+      </nav>
       <button type="button" class="btn btn-wa btn-disabled" disabled aria-disabled="true" title="Nomor WhatsApp belum dikunci">WhatsApp segera</button>
     </div>
   </header>
 
   <main id="main">
+    <!-- Hero: Arion-style problem + product mock -->
     <section class="hero">
       <div class="wrap hero-grid">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Operator tour &amp; aktivitas · Indonesia</p>
-          <h1>Besok guide berangkat pakai roster yang sudah lunas — bukan screenshot chat.</h1>
-          <p class="lede">Catat inquiry dari WhatsApp, tarik DP lewat QRIS, lalu buka roster hari-H yang hanya menampilkan tamu sudah bayar.</p>
+          <p class="eyebrow">Untuk operator tour &amp; aktivitas · Indonesia</p>
+          <h1>Tamu chat. Deposit belum jelas. Guide berangkat dari screenshot.</h1>
+          <p class="lede">HariOps merapikan alur <strong>WhatsApp → QRIS DP → roster lunas</strong> supaya hari-H hanya menampilkan yang sudah bayar — tanpa spreadsheet.</p>
           <div class="hero-actions">
             <button type="button" class="btn btn-wa btn-disabled" disabled aria-disabled="true">Chat WhatsApp</button>
-            <a class="btn btn-secondary" href="#offer">Lihat alurnya</a>
+            <a class="btn btn-secondary" href="#how">Lihat alurnya</a>
           </div>
-          <p class="micro">Kontak WhatsApp &amp; email belum dipasang — menunggu nomor asli dari Kris via Leo. Tombol WA sengaja nonaktif agar tidak mengarah ke nomor palsu.</p>
+          <p class="micro">Tombol WA nonaktif sampai nomor resmi dari Kris tersedia — bukan nomor palsu.</p>
         </div>
 
-        <div class="hero-phone reveal delay" aria-label="Mock roster di layar ponsel">
+        <div class="hero-phone reveal delay" aria-label="Mock produk HariOps">
           <div class="phone">
             <div class="phone-notch" aria-hidden="true"></div>
             <div class="phone-screen">
@@ -56,7 +61,6 @@
                 </dl>
                 <div class="inquiry-actions">
                   <span class="chip chip-wait">Menunggu DP</span>
-                  <span class="chip chip-paid">Siap roster</span>
                 </div>
               </div>
               <div class="app-bar sub">
@@ -79,27 +83,46 @@
                   <span class="chip chip-paid">Lunas</span>
                 </li>
               </ul>
-              <p class="phone-foot">Contoh UI — jam &amp; pax spesifik, bukan template generik</p>
+              <p class="phone-foot">Contoh UI — jam &amp; pax spesifik</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="strip" aria-label="Alur produk">
-      <div class="wrap strip-inner reveal">
-        <span>Chat WA</span>
-        <span class="strip-arrow" aria-hidden="true">→</span>
-        <span>QRIS DP</span>
-        <span class="strip-arrow" aria-hidden="true">→</span>
-        <span>Roster lunas</span>
+    <!-- Social proof rhythm: segments, not fake logos -->
+    <section class="band band-segments" aria-label="Segmen">
+      <div class="wrap segments reveal">
+        <span>Day trips</span>
+        <span aria-hidden="true">·</span>
+        <span>Private tour</span>
+        <span aria-hidden="true">·</span>
+        <span>Dive &amp; snorkel</span>
+        <span aria-hidden="true">·</span>
+        <span>Activity desk</span>
       </div>
     </section>
 
-    <section class="section" id="offer">
+    <section class="section outcome">
+      <div class="wrap outcome-grid">
+        <div class="reveal">
+          <h2>Inquiry masuk kapan saja. Roster pagi tetap rapi.</h2>
+          <p class="section-intro">Chat malam tetap bisa dicatat. DP QRIS punya status jelas. Guide hanya melihat nama yang sudah <strong>Lunas</strong>.</p>
+        </div>
+        <ul class="outcome-points reveal delay">
+          <li>Lead WA tidak hilang di HP lain</li>
+          <li>Deposit tidak “katanya sudah transfer”</li>
+          <li>Hari-H tidak disusun ulang dari Excel</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section section-alt" id="how">
       <div class="wrap">
-        <h2 class="reveal">Tiga layar. Satu alur.</h2>
-        <p class="section-intro reveal">Dari chat sampai guide berangkat — tanpa spreadsheet.</p>
+        <p class="section-kicker reveal">Cara kerja</p>
+        <h2 class="reveal">Tiga langkah. Satu sumber kebenaran.</h2>
+        <p class="section-intro reveal">Fokus operasional WA → QRIS → roster — bukan OTA sync v1.</p>
         <div class="frames">
           <article class="frame reveal">
             <div class="frame-screen" aria-hidden="true">
@@ -107,8 +130,8 @@
               <div class="msg out">Slot 04:30 masih ada · DP Rp 450rb</div>
               <div class="msg meta">18 Sep · 04:30 · 4 pax · Ubud pickup</div>
             </div>
-            <h3>1. Inquiry</h3>
-            <p>Simpan jam, pax, pickup, dan DP dari chat — bukan cuma “ada lead”.</p>
+            <h3>1. Catat inquiry</h3>
+            <p>Jam, pax, pickup, dan nominal DP tersimpan dari chat.</p>
           </article>
           <article class="frame reveal delay">
             <div class="frame-screen pay" aria-hidden="true">
@@ -116,32 +139,41 @@
               <strong class="mono">Rp 450.000</strong>
               <span class="chip chip-wait">Menunggu</span>
             </div>
-            <h3>2. QRIS</h3>
-            <p>Link deposit jelas: menunggu atau lunas — bukan chase screenshot.</p>
+            <h3>2. Tagih DP QRIS</h3>
+            <p>Status menunggu atau lunas — bukan chase screenshot.</p>
           </article>
           <article class="frame reveal delay-2">
             <div class="frame-screen roster" aria-hidden="true">
               <div class="mini"><i></i><span class="chip chip-paid">Lunas</span></div>
               <div class="mini"><i></i><span class="chip chip-paid">Lunas</span></div>
-              <div class="mini faint"><i></i><span class="chip chip-wait">Menunggu</span></div>
             </div>
-            <h3>3. Roster</h3>
+            <h3>3. Buka roster lunas</h3>
             <p>Filter tanggal. Guide berangkat dari daftar yang sudah bayar.</p>
           </article>
+        </div>
+        <div class="trust-row reveal" aria-label="Fokus produk">
+          <span class="trust-chip">QRIS</span>
+          <span class="trust-chip">WA-first</span>
+          <span class="trust-chip">Roster lunas</span>
         </div>
       </div>
     </section>
 
-    <section class="section trust-section">
-      <div class="wrap trust-row reveal" aria-label="Fokus produk">
-        <span class="trust-chip">QRIS</span>
-        <span class="trust-chip">WA-first</span>
-        <span class="trust-chip">Roster lunas</span>
+    <!-- Dense mid CTA like Arion -->
+    <section class="cta-mid">
+      <div class="wrap cta-mid-inner reveal">
+        <div>
+          <h2>Deposit masuk. Roster ikut bersih.</h2>
+          <p>Early access lewat WhatsApp. Self-serve belum dibuka.</p>
+        </div>
+        <button type="button" class="btn btn-wa btn-lg btn-disabled" disabled aria-disabled="true">WhatsApp segera</button>
       </div>
     </section>
 
+    <!-- FAQ -->
     <section class="section faq-section" id="faq">
       <div class="wrap">
+        <p class="section-kicker reveal">FAQ</p>
         <h2 class="reveal">Pertanyaan operator</h2>
         <div class="faq">
           <details class="reveal">
@@ -158,30 +190,34 @@
           </details>
           <details class="reveal">
             <summary>Cocok untuk private trip / jam jemput berubah?</summary>
-            <p>Ya. Catat jam pickup, pax, dan catatan hotel di inquiry — mirip detail yang biasanya tercecer di chat panjang.</p>
+            <p>Ya. Catat jam pickup, pax, dan catatan hotel di inquiry — detail yang biasanya tercecer di chat panjang.</p>
           </details>
           <details class="reveal">
-            <summary>Apakah mengganti Arion atau channel manager?</summary>
-            <p>HariOps fokus alur WA → QRIS → roster operasional. Bukan OTA sync atau website booking page lengkap (v1).</p>
+            <summary>Apakah ini mengganti Arion atau channel manager?</summary>
+            <p>HariOps fokus alur WA → QRIS → roster operasional. Bukan OTA sync atau website booking page lengkap di v1.</p>
           </details>
         </div>
       </div>
     </section>
 
+    <!-- Bottom dense CTA -->
     <section class="section cta-section" id="cta">
       <div class="wrap cta-card reveal">
         <div>
           <h2>Akses awal lewat WhatsApp</h2>
           <p>Pendaftaran mandiri belum dibuka. Tombol chat aktif setelah nomor resmi tersedia.</p>
         </div>
-        <button type="button" class="btn btn-wa btn-lg btn-disabled" disabled aria-disabled="true">WhatsApp segera</button>
+        <div class="cta-stack">
+          <button type="button" class="btn btn-wa btn-lg btn-disabled" disabled aria-disabled="true">WhatsApp segera</button>
+          <a class="btn btn-secondary" href="#how">Lihat alurnya lagi</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="wrap footer-inner">
-      <span>© <span id="year">2026</span> HariOps · placeholder brand</span>
+      <span>© <span id="year">2026</span> HariOps · placeholder brand · Indonesia</span>
       <a href="DESIGN.md">DESIGN.md</a>
     </div>
   </footer>
@@ -195,7 +231,7 @@
         entries.forEach(function (e) {
           if (e.isIntersecting) e.target.classList.add('is-in');
         });
-      }, { threshold: 0.15 });
+      }, { threshold: 0.12 });
       document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
     }
   </script>
