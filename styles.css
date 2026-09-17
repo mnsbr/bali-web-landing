@@ -193,7 +193,7 @@ a:focus-visible, button:focus-visible {
   font-weight: 700;
   font-size: 0.92rem;
 }
-.app-date { color: #78716c; font-family: var(--font-body); font-size: 0.75rem; font-weight: 600; }
+.app-date { color: #57534e; font-family: var(--font-body); font-size: 0.75rem; font-weight: 600; }
 .flow-mini {
   display: flex;
   flex-wrap: wrap;
@@ -227,7 +227,7 @@ a:focus-visible, button:focus-visible {
 .roster-list strong { display: block; font-size: 0.86rem; }
 .roster-list li span:not(.chip) {
   display: block;
-  color: #78716c;
+  color: #57534e;
   font-size: 0.72rem;
   margin-top: 2px;
 }
@@ -243,13 +243,13 @@ a:focus-visible, button:focus-visible {
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
-.chip-paid { background: color-mix(in srgb, var(--success) 18%, #fff); color: #15803d; }
-.chip-wait { background: color-mix(in srgb, var(--warn) 22%, #fff); color: #a16207; }
+.chip-paid { background: color-mix(in srgb, var(--success) 18%, #fff); color: #14532d; }
+.chip-wait { background: color-mix(in srgb, var(--warn) 22%, #fff); color: #854d0e; }
 .phone-foot {
   margin: 0;
   padding: 10px 12px 14px;
   font-size: 0.72rem;
-  color: #78716c;
+  color: #57534e;
   border-top: 1px solid #e7e5e4;
 }
 
