@@ -6,7 +6,7 @@ Anti-slop baseline: https://github.com/febbhav/signs-of-ai-design
 
 | Token | Value | Use |
 |-------|-------|-----|
-| `--bg` | `#1C1917` | Warm charcoal page background |
+| `--bg` | `#F7F4EF` | Light paper marketing background (aligned with Rails) |
 | `--accent` | `#F59E0B` | Amber — links, emphasis, secondary UI (not paid) |
 | `--wa` | `#25D366` | WhatsApp CTA **only** |
 | `--success` / `--color-success` | `#22C55E` | Lunas / paid chips |
@@ -40,3 +40,8 @@ Do not default to Inter, Geist, or Space Grotesk.
 ## Motion
 
 One easing curve, 150–240ms. Prefer CTA hover + light hero fade. Honor `prefers-reduced-motion: reduce`.
+
+
+## Marketing vs app
+
+Landing Pages and Rails app both use light paper chrome. Amber accent + WA green CTA only.

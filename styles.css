@@ -1,20 +1,20 @@
 :root {
-  --bg: #1c1917;
-  --bg-elevated: #292524;
-  --surface: #292524;
-  --text: #fafaf9;
-  --muted: #a8a29e;
-  --accent: #f59e0b;
-  --accent-ink: #1c1917;
-  --wa: #25d366;
+  --bg: #F7F4EF;
+  --bg-elevated: #F5F0E8;
+  --surface: #FFFFFF;
+  --text: #1C1917;
+  --muted: #57534E;
+  --accent: #F59E0B;
+  --accent-ink: #1C1917;
+  --wa: #25D366;
   --wa-ink: #052e16;
-  --success: #22c55e;
-  --color-success: #22c55e;
-  --warn: #eab308;
-  --color-warn: #eab308;
-  --danger: #ef4444;
-  --border: #44403c;
-  --focus: #fde68a;
+  --success: #22C55E;
+  --color-success: #22C55E;
+  --warn: #EAB308;
+  --color-warn: #EAB308;
+  --danger: #EF4444;
+  --border: #E7E5E4;
+  --focus: #D97706;
   --font-display: "Sora", system-ui, sans-serif;
   --font-body: "IBM Plex Sans", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
@@ -65,7 +65,7 @@ a:focus-visible, button:focus-visible {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  background: color-mix(in srgb, var(--bg) 90%, #fff);
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(10px);
 }
@@ -120,7 +120,7 @@ a:focus-visible, button:focus-visible {
 }
 .btn-lg { min-height: 52px; padding-inline: calc(var(--space) * 3); }
 
-.hero { padding: calc(var(--space) * 5) 0 calc(var(--space) * 4); }
+.hero { padding: calc(var(--space) * 8) 0 calc(var(--space) * 7); }
 .hero-grid {
   display: grid;
   gap: calc(var(--space) * 4);
@@ -163,17 +163,17 @@ a:focus-visible, button:focus-visible {
 .phone {
   width: min(100%, 320px);
   margin-inline: auto;
-  background: #0c0a09;
-  border: 2px solid #57534e;
+  background: #e7e5e4;
+  border: 2px solid #d6d3d1;
   border-radius: 28px;
   padding: 10px;
-  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 16px 40px rgba(28, 25, 23, 0.12);
 }
 .phone-notch {
   width: 38%;
   height: 10px;
   margin: 4px auto 10px;
-  background: #292524;
+  background: #a8a29e;
   border-radius: 999px;
 }
 .phone-screen {
@@ -297,7 +297,7 @@ a:focus-visible, button:focus-visible {
 .frame-screen {
   min-height: 120px;
   border-radius: 12px;
-  background: #0c0a09;
+  background: #F5F0E8;
   border: 1px solid var(--border);
   padding: 12px;
   display: grid;
@@ -311,9 +311,9 @@ a:focus-visible, button:focus-visible {
   font-size: 0.78rem;
   font-weight: 600;
 }
-.msg.in { background: #44403c; justify-self: start; }
-.msg.out { background: color-mix(in srgb, var(--accent) 28%, #292524); color: #fde68a; justify-self: end; }
-.msg.meta { color: var(--muted); font-size: 0.7rem; font-weight: 500; }
+.msg.in { background: #E8E8E8; color: #1C1917; justify-self: start; }
+.msg.out { background: #DCF8C6; color: #1C1917; justify-self: end; }
+.msg.meta { color: #57534e; font-size: 0.7rem; font-weight: 500; }
 .frame-screen.pay { justify-items: start; }
 .pay-label { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.06em; color: var(--warn); }
 .frame-screen.pay .mono { font-size: 1.2rem; }
@@ -328,7 +328,7 @@ a:focus-visible, button:focus-visible {
   height: 8px;
   flex: 1;
   border-radius: 99px;
-  background: #44403c;
+  background: #d6d3d1;
 }
 .mini.faint { opacity: 0.55; }
 
@@ -401,11 +401,20 @@ a:focus-visible, button:focus-visible {
   font-weight: 600;
   color: #1c1917;
 }
-.inquiry-chat .bubble.in { background: #e7e5e4; justify-self: start; }
+.inquiry-chat .bubble.in { background: #E8E8E8; justify-self: start; }
 .inquiry-chat .bubble.out {
-  background: color-mix(in srgb, #f59e0b 28%, #fff);
+  background: #DCF8C6;
   justify-self: end;
 }
+.inquiry-chat .bubble .ts {
+  display: block;
+  margin-top: 3px;
+  font-size: 0.58rem;
+  font-weight: 600;
+  color: #78716c;
+  text-align: right;
+}
+.inquiry-chat .bubble.in .ts { text-align: left; }
 .inquiry-meta {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -565,7 +574,7 @@ a:focus-visible, button:focus-visible {
 
 .cta-mid {
   padding: calc(var(--space) * 5) 0;
-  background: color-mix(in srgb, var(--accent) 8%, var(--bg));
+  background: color-mix(in srgb, var(--accent) 12%, #fff);
   border-block: 1px solid var(--border);
 }
 .cta-mid-inner {
