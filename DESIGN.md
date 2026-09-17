@@ -7,7 +7,8 @@ Anti-slop baseline: https://github.com/febbhav/signs-of-ai-design
 | Token | Value | Use |
 |-------|-------|-----|
 | `--bg` | `#F5F0E8` | Light paper marketing background (aligned with Rails) |
-| `--accent` | `#F59E0B` | Amber — links, emphasis, secondary UI (not paid) |
+| `--accent` | `#F59E0B` | Amber fills/borders only |
+| `--accent-text` | `#B45309` | Links, eyebrow, kickers on paper |
 | `--wa` | `#25D366` | WhatsApp CTA **only** |
 | `--success` / `--color-success` | `#22C55E` | Lunas / paid chips |
 | `--warn` / `--color-warn` | `#EAB308` | Menunggu / unpaid |

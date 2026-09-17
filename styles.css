@@ -5,6 +5,7 @@
   --text: #1C1917;
   --muted: #57534E;
   --accent: #F59E0B;
+  --accent-text: #B45309;
   --accent-ink: #1C1917;
   --wa: #25D366;
   --wa-ink: #052e16;
@@ -14,7 +15,7 @@
   --color-warn: #EAB308;
   --danger: #EF4444;
   --border: #E7E5E4;
-  --focus: #D97706;
+  --focus: #B45309;
   --font-display: "Sora", system-ui, sans-serif;
   --font-body: "IBM Plex Sans", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
@@ -40,9 +41,9 @@ body {
   line-height: 1.55;
 }
 h1, h2, h3 { font-family: var(--font-display); letter-spacing: -0.03em; }
-a { color: var(--accent); }
+a { color: var(--accent-text); }
 a:focus-visible, button:focus-visible {
-  outline: 3px solid var(--focus);
+  outline: 3px solid var(--accent-text);
   outline-offset: 3px;
 }
 .mono { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
@@ -110,7 +111,7 @@ a:focus-visible, button:focus-visible {
   color: var(--text);
   border-color: var(--border);
 }
-.btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
+.btn-secondary:hover { border-color: var(--accent); color: var(--accent-text); }
 .btn-disabled,
 .btn:disabled {
   opacity: 0.55;
@@ -131,7 +132,7 @@ a:focus-visible, button:focus-visible {
 }
 .eyebrow {
   margin: 0 0 calc(var(--space) * 1.5);
-  color: var(--accent);
+  color: var(--accent-text);
   font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -268,7 +269,7 @@ a:focus-visible, button:focus-visible {
   font-weight: 700;
   font-size: 0.95rem;
 }
-.strip-arrow { color: var(--accent); }
+.strip-arrow { color: var(--accent-text); }
 
 .section { padding: calc(var(--space) * 6) 0; }
 .section h2 {
@@ -315,7 +316,7 @@ a:focus-visible, button:focus-visible {
 .msg.out { background: #DCF8C6; color: #1C1917; justify-self: end; }
 .msg.meta { color: #57534e; font-size: 0.7rem; font-weight: 500; }
 .frame-screen.pay { justify-items: start; }
-.pay-label { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.06em; color: var(--warn); }
+.pay-label { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.06em; color: #854D0E; }
 .frame-screen.pay .mono { font-size: 1.2rem; }
 .mini {
   display: flex;
@@ -411,7 +412,7 @@ a:focus-visible, button:focus-visible {
   margin-top: 3px;
   font-size: 0.58rem;
   font-weight: 600;
-  color: #78716c;
+  color: #57534E;
   text-align: right;
 }
 .inquiry-chat .bubble.in .ts { text-align: left; }
@@ -492,7 +493,7 @@ a:focus-visible, button:focus-visible {
   list-style: none;
 }
 .faq summary::-webkit-details-marker { display: none; }
-.faq details[open] summary { color: var(--accent); }
+.faq details[open] summary { color: var(--accent-text); }
 .faq p {
   margin: 0 0 14px;
   color: var(--muted);
@@ -563,7 +564,7 @@ a:focus-visible, button:focus-visible {
 
 .section-kicker {
   margin: 0 0 calc(var(--space) * 1);
-  color: var(--accent);
+  color: var(--accent-text);
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.06em;
