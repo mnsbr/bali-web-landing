@@ -1,5 +1,5 @@
 :root {
-  --bg: #F7F4EF;
+  --bg: #F5F0E8;
   --bg-elevated: #F5F0E8;
   --surface: #FFFFFF;
   --text: #1C1917;
@@ -120,7 +120,7 @@ a:focus-visible, button:focus-visible {
 }
 .btn-lg { min-height: 52px; padding-inline: calc(var(--space) * 3); }
 
-.hero { padding: calc(var(--space) * 8) 0 calc(var(--space) * 7); }
+.hero { padding: 72px 0 56px; }
 .hero-grid {
   display: grid;
   gap: calc(var(--space) * 4);
@@ -141,7 +141,7 @@ a:focus-visible, button:focus-visible {
   margin: 0 0 calc(var(--space) * 2);
   font-size: clamp(1.7rem, 4.2vw, 2.65rem);
   line-height: 1.15;
-  max-width: 22ch;
+  max-width: 19ch;
 }
 .lede {
   margin: 0 0 calc(var(--space) * 3);
@@ -499,7 +499,7 @@ a:focus-visible, button:focus-visible {
   font-size: 0.95rem;
 }
 
-/* Arion-inspired structural rhythm (HariOps charcoal brand) */
+/* Arion-inspired structural rhythm (HariOps light-paper brand) */
 .nav-links {
   display: none;
   gap: calc(var(--space) * 2);
