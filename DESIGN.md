@@ -11,4 +11,4 @@ North star: Antigravity-like product air — white canvas, medium-weight large t
 - Type: Inter 400–600 + IBM Plex Mono amounts
 
 ## Mascot Hari
-Favicon + footer mark only — not in hero/CTA.
+Favicon only — not in hero, CTA, or footer.
