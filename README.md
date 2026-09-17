@@ -1,23 +1,17 @@
 # HariOps landing
 
-Static product landing for **HariOps** (placeholder brand) — Indonesia tour/activity operator tool: WhatsApp → QRIS deposit → day roster.
+Static product landing — Indonesia tour/activity ops (WhatsApp → QRIS → paid roster).
 
 Live: https://mnsbr.github.io/bali-web-landing/
 
-## Stack
-
-Plain HTML + CSS. See `DESIGN.md` (anti-slop rules + project tokens).
+Design system: see `DESIGN.md` (Arky tokens: warm charcoal + amber; WA green only on WhatsApp CTA).
 
 ## CTA policy
 
-Until self-serve signup exists, primary CTA is **Chat WhatsApp** (waitlist). No fake “Start free”. Email/mailto hidden until Kris provides a real address.
+WhatsApp buttons stay **disabled** until Kris provides a real number (no fake `wa.me`). Secondary CTA: `#offer` — “Lihat alurnya”.
 
 ## Run
 
 ```bash
 python3 -m http.server 8080
 ```
-
-## Edit contacts
-
-Search `6200000000000` in `index.html` when the real WhatsApp number lands.
