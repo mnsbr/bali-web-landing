@@ -159,7 +159,6 @@ a:focus-visible, button:focus-visible {
 @media (min-width: 520px) {
   .hero-actions { flex-direction: row; flex-wrap: wrap; }
 }
-.micro { margin: 0; color: var(--muted); font-size: 0.82rem; max-width: 46ch; }
 
 .phone {
   width: min(100%, 320px);
@@ -246,13 +245,6 @@ a:focus-visible, button:focus-visible {
 }
 .chip-paid { background: color-mix(in srgb, var(--success) 18%, #fff); color: #14532d; }
 .chip-wait { background: color-mix(in srgb, var(--warn) 22%, #fff); color: #854d0e; }
-.phone-foot {
-  margin: 0;
-  padding: 10px 12px 14px;
-  font-size: 0.72rem;
-  color: #57534e;
-  border-top: 1px solid #e7e5e4;
-}
 
 .strip {
   border-block: 1px solid var(--border);
@@ -537,29 +529,8 @@ a:focus-visible, button:focus-visible {
   letter-spacing: 0.02em;
 }
 
-.outcome { padding-top: calc(var(--space) * 7); }
-.outcome-grid {
-  display: grid;
-  gap: calc(var(--space) * 3);
-}
 @media (min-width: 800px) {
-  .outcome-grid { grid-template-columns: 1.2fr 0.8fr; align-items: start; }
-}
-.outcome-points {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  gap: calc(var(--space) * 1.5);
-}
-.outcome-points li {
-  padding: calc(var(--space) * 2);
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  border-left: 3px solid var(--accent);
-  color: var(--muted);
-  font-weight: 500;
+  
 }
 
 .section-kicker {
@@ -573,26 +544,9 @@ a:focus-visible, button:focus-visible {
 
 #how .trust-row { margin-top: calc(var(--space) * 4); }
 
-.cta-mid {
-  padding: calc(var(--space) * 5) 0;
-  background: color-mix(in srgb, var(--accent) 12%, #fff);
-  border-block: 1px solid var(--border);
-}
-.cta-mid-inner {
-  display: flex;
-  flex-direction: column;
-  gap: calc(var(--space) * 3);
-  align-items: flex-start;
-}
 @media (min-width: 720px) {
-  .cta-mid-inner {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
+  
 }
-.cta-mid h2 { margin: 0 0 6px; font-size: clamp(1.25rem, 2.5vw, 1.6rem); }
-.cta-mid p { margin: 0; color: var(--muted); }
 
 .cta-stack {
   display: flex;
@@ -630,3 +584,14 @@ a:focus-visible, button:focus-visible {
 }
 .frames { margin-top: calc(var(--space) * 4); }
 .section-alt .section-kicker + h2 { margin-bottom: calc(var(--space) * 1); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .hari-crest {
+    transform-origin: 58px 28px;
+    animation: hari-bob 2.4s ease-in-out infinite;
+  }
+}
+@keyframes hari-bob {
+  0%, 100% { transform: rotate(-4deg); }
+  50% { transform: rotate(5deg); }
+}
