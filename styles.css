@@ -383,3 +383,109 @@ a:focus-visible, button:focus-visible {
 .reveal.delay { transition-delay: 80ms; }
 .reveal.delay-2 { transition-delay: 140ms; }
 .reveal.is-in { opacity: 1; transform: none; }
+
+/* Competitor-craft P1 */
+.inquiry-card {
+  margin: 8px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #e7e5e4;
+  border-radius: 14px;
+}
+.inquiry-chat { display: grid; gap: 6px; margin-bottom: 10px; }
+.inquiry-chat .bubble {
+  max-width: 92%;
+  padding: 7px 9px;
+  border-radius: 12px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #1c1917;
+}
+.inquiry-chat .bubble.in { background: #e7e5e4; justify-self: start; }
+.inquiry-chat .bubble.out {
+  background: color-mix(in srgb, #f59e0b 28%, #fff);
+  justify-self: end;
+}
+.inquiry-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 8px;
+  margin: 0 0 8px;
+}
+.inquiry-meta div {
+  background: #f5f5f4;
+  border-radius: 8px;
+  padding: 6px 8px;
+}
+.inquiry-meta dt {
+  margin: 0;
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #57534e;
+  font-weight: 700;
+}
+.inquiry-meta dd {
+  margin: 2px 0 0;
+  font-size: 0.74rem;
+  font-weight: 650;
+  color: #1c1917;
+}
+.inquiry-actions { display: flex; flex-wrap: wrap; gap: 6px; }
+.app-bar.sub {
+  margin-top: 4px;
+  border-top: 1px solid #d6d3d1;
+  background: #f5f5f4;
+}
+.roster-list.compact { padding-top: 4px; }
+.roster-list.compact li { padding: 8px; }
+
+.trust-section { padding: calc(var(--space) * 3) 0 calc(var(--space) * 2); }
+.trust-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--space) * 1.5);
+  justify-content: center;
+}
+.trust-chip {
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.faq-section { padding-top: calc(var(--space) * 2); }
+.faq {
+  display: grid;
+  gap: calc(var(--space) * 1.5);
+  max-width: 720px;
+}
+.faq details {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 4px 14px;
+}
+.faq summary {
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-weight: 700;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq details[open] summary { color: var(--accent); }
+.faq p {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}

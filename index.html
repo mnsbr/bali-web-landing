@@ -39,40 +39,47 @@
             <div class="phone-notch" aria-hidden="true"></div>
             <div class="phone-screen">
               <div class="app-bar">
-                <span>Roster</span>
-                <span class="app-date">Besok · 18 Sep</span>
+                <span>Inquiry</span>
+                <span class="app-date">WA · 07:14</span>
               </div>
-              <div class="flow-mini" aria-hidden="true">
-                <span>Chat WA</span>
-                <span class="sep">→</span>
-                <span>QRIS DP</span>
-                <span class="sep">→</span>
-                <span>Roster</span>
+              <div class="inquiry-card">
+                <div class="inquiry-chat" aria-hidden="true">
+                  <div class="bubble in">Sunrise trek besok bisa 4 pax?</div>
+                  <div class="bubble out">Bisa. Pickup 04:30 · DP dulu ya</div>
+                </div>
+                <dl class="inquiry-meta">
+                  <div><dt>Aktivitas</dt><dd>Sunrise Mount Batur</dd></div>
+                  <div><dt>Tanggal</dt><dd>Besok · 18 Sep</dd></div>
+                  <div><dt>Jam</dt><dd>04:30 pickup</dd></div>
+                  <div><dt>Pax</dt><dd>4 dewasa</dd></div>
+                  <div><dt>DP</dt><dd class="mono">Rp 450.000</dd></div>
+                </dl>
+                <div class="inquiry-actions">
+                  <span class="chip chip-wait">Menunggu DP</span>
+                  <span class="chip chip-paid">Siap roster</span>
+                </div>
               </div>
-              <ul class="roster-list">
+              <div class="app-bar sub">
+                <span>Roster lunas</span>
+                <span class="app-date">18 Sep</span>
+              </div>
+              <ul class="roster-list compact">
                 <li>
                   <div>
                     <strong>Ayu &amp; friends</strong>
-                    <span>Sunrise trek · 4 pax</span>
+                    <span>04:30 · Batur · 4 pax</span>
                   </div>
                   <span class="chip chip-paid">Lunas</span>
                 </li>
                 <li>
                   <div>
                     <strong>Marcus T.</strong>
-                    <span>Snorkel Nusa · 2 pax</span>
-                  </div>
-                  <span class="chip chip-paid">Lunas</span>
-                </li>
-                <li>
-                  <div>
-                    <strong>Dewi</strong>
-                    <span>Ubud day · 3 pax</span>
+                    <span>09:00 · Snorkel · 2 pax</span>
                   </div>
                   <span class="chip chip-paid">Lunas</span>
                 </li>
               </ul>
-              <p class="phone-foot"><span class="mono">Rp 1.650.000</span> lunas hari ini · contoh UI</p>
+              <p class="phone-foot">Contoh UI — jam &amp; pax spesifik, bukan template generik</p>
             </div>
           </div>
         </div>
@@ -96,12 +103,12 @@
         <div class="frames">
           <article class="frame reveal">
             <div class="frame-screen" aria-hidden="true">
-              <div class="msg in">Sunrise 4 pax besok?</div>
-              <div class="msg out">Bisa. DP dulu ya.</div>
-              <div class="msg meta">Inquiry tersimpan · 4 pax</div>
+              <div class="msg in">Sunrise trek besok 4 pax, pickup 04:30?</div>
+              <div class="msg out">Slot 04:30 masih ada · DP Rp 450rb</div>
+              <div class="msg meta">18 Sep · 04:30 · 4 pax · Ubud pickup</div>
             </div>
             <h3>1. Inquiry</h3>
-            <p>Ambil nama, tanggal, pax, dan nominal dari chat.</p>
+            <p>Simpan jam, pax, pickup, dan DP dari chat — bukan cuma “ada lead”.</p>
           </article>
           <article class="frame reveal delay">
             <div class="frame-screen pay" aria-hidden="true">
@@ -125,13 +132,39 @@
       </div>
     </section>
 
-    <section class="section metrics-section">
-      <div class="wrap metrics reveal" aria-label="Fokus produk">
-        <span>Waitlist</span>
-        <span aria-hidden="true">·</span>
-        <span>QRIS</span>
-        <span aria-hidden="true">·</span>
-        <span>WA-first</span>
+    <section class="section trust-section">
+      <div class="wrap trust-row reveal" aria-label="Fokus produk">
+        <span class="trust-chip">QRIS</span>
+        <span class="trust-chip">WA-first</span>
+        <span class="trust-chip">Roster lunas</span>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="wrap">
+        <h2 class="reveal">Pertanyaan operator</h2>
+        <div class="faq">
+          <details class="reveal">
+            <summary>Apa bedanya dengan spreadsheet + chat WA?</summary>
+            <p>Inquiry, status DP, dan roster hari-H ada di satu tempat. Guide tidak berangkat dari screenshot yang belum jelas lunas.</p>
+          </details>
+          <details class="reveal">
+            <summary>Apakah tamu harus download aplikasi?</summary>
+            <p>Tidak. Tamu tetap chat WhatsApp seperti biasa. Kamu yang mencatat inquiry dan mengirim link DP QRIS.</p>
+          </details>
+          <details class="reveal">
+            <summary>Bagaimana kalau deposit belum masuk?</summary>
+            <p>Status tetap <strong>Menunggu</strong>. Baru setelah lunas, nama muncul di roster tanggal itu — supaya slot tidak “penuh” oleh yang belum bayar.</p>
+          </details>
+          <details class="reveal">
+            <summary>Cocok untuk private trip / jam jemput berubah?</summary>
+            <p>Ya. Catat jam pickup, pax, dan catatan hotel di inquiry — mirip detail yang biasanya tercecer di chat panjang.</p>
+          </details>
+          <details class="reveal">
+            <summary>Apakah mengganti Arion atau channel manager?</summary>
+            <p>HariOps fokus alur WA → QRIS → roster operasional. Bukan OTA sync atau website booking page lengkap (v1).</p>
+          </details>
+        </div>
       </div>
     </section>
 
