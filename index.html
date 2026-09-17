@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="HariOps — WhatsApp ke QRIS ke roster lunas untuk operator tour.">
-  <title>HariOps — WA → QRIS → roster</title>
+  <title>HariOps</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,7 +20,7 @@
         <a href="#how">Cara kerja</a>
         <a href="#faq">FAQ</a>
       </nav>
-      <button type="button" class="btn btn-wa btn-disabled" disabled aria-disabled="true" title="Nomor WhatsApp belum dikunci">WhatsApp segera</button>
+      <button type="button" class="btn btn-dark btn-sm btn-disabled" disabled aria-disabled="true">WhatsApp</button>
     </div>
   </header>
 
@@ -32,79 +32,48 @@
           <h1>Dari WA ke roster lunas.</h1>
           <p class="lede">Catat inquiry, tarik DP QRIS, buka roster hari-H.</p>
           <div class="hero-actions">
-            <button type="button" class="btn btn-wa btn-disabled" disabled aria-disabled="true">Chat WhatsApp</button>
-            <a class="btn btn-secondary" href="#how">Lihat alurnya</a>
+            <button type="button" class="btn btn-dark btn-disabled" disabled aria-disabled="true">Chat WhatsApp</button>
+            <a class="btn btn-ghost" href="#how">Lihat alurnya</a>
           </div>
         </div>
 
         <div class="hero-visual reveal delay">
           <div class="mascot" aria-hidden="true">
-            <!-- Hari: rooster + tiny roster card -->
-            <svg class="mascot-svg" viewBox="0 0 120 140" width="96" height="112" xmlns="http://www.w3.org/2000/svg" role="img">
-              <title>Hari mascot</title>
-              <!-- body -->
-              <ellipse cx="52" cy="78" rx="28" ry="32" fill="#F5F0E8" stroke="#1C1917" stroke-width="2.5"/>
-              <!-- wing -->
-              <path d="M38 72 Q28 78 36 92" fill="none" stroke="#1C1917" stroke-width="2.5" stroke-linecap="round"/>
-              <!-- head -->
-              <circle cx="58" cy="42" r="20" fill="#FFFCF7" stroke="#1C1917" stroke-width="2.5"/>
-              <!-- crest -->
-              <path class="hari-crest" d="M48 28 Q52 12 58 26 Q64 10 70 28" fill="#F59E0B" stroke="#1C1917" stroke-width="2" stroke-linejoin="round"/>
-              <!-- beak -->
-              <path d="M76 44 L88 46 L76 50 Z" fill="#F59E0B" stroke="#1C1917" stroke-width="1.5"/>
-              <!-- eye -->
-              <circle cx="64" cy="40" r="3.2" fill="#1C1917"/>
-              <!-- wattle -->
-              <path d="M74 50 Q78 58 72 56" fill="#EF4444" stroke="#1C1917" stroke-width="1.2"/>
-              <!-- legs -->
-              <path d="M44 108 L40 128 M44 108 L48 128 M60 108 L56 128 M60 108 L64 128" stroke="#D97706" stroke-width="2.5" stroke-linecap="round"/>
-              <!-- roster card -->
-              <rect x="78" y="68" width="36" height="44" rx="6" fill="#FFFFFF" stroke="#1C1917" stroke-width="2"/>
-              <rect x="84" y="76" width="18" height="3" rx="1" fill="#D6D3D1"/>
-              <rect x="84" y="84" width="22" height="3" rx="1" fill="#D6D3D1"/>
-              <rect x="84" y="92" width="14" height="3" rx="1" fill="#D6D3D1"/>
-              <circle cx="104" cy="98" r="8" fill="#22C55E" stroke="#1C1917" stroke-width="1.5"/>
-              <path d="M100 98 L103 101 L109 94" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg class="mascot-svg" viewBox="0 0 120 140" width="56" height="66" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="52" cy="78" rx="26" ry="30" fill="#F4F4F5" stroke="#18181B" stroke-width="1.75"/>
+              <circle cx="58" cy="44" r="18" fill="#FAFAFA" stroke="#18181B" stroke-width="1.75"/>
+              <path d="M50 32 Q54 18 58 30 Q62 16 68 32" fill="#A1A1AA" stroke="#18181B" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M74 45 L84 47 L74 50 Z" fill="#A1A1AA" stroke="#18181B" stroke-width="1.25"/>
+              <circle cx="64" cy="42" r="2.5" fill="#18181B"/>
+              <rect x="82" y="72" width="30" height="36" rx="5" fill="#FFFFFF" stroke="#18181B" stroke-width="1.75"/>
+              <rect x="88" y="80" width="14" height="2" rx="1" fill="#D4D4D8"/>
+              <rect x="88" y="86" width="18" height="2" rx="1" fill="#D4D4D8"/>
+              <circle cx="102" cy="98" r="6" fill="#22C55E"/>
+              <path d="M99 98 L101.5 100.5 L106 95.5" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
           </div>
-          <div class="phone" aria-label="Mock produk HariOps">
-            <div class="phone-notch" aria-hidden="true"></div>
-            <div class="phone-screen">
-              <div class="app-bar">
-                <span>Inquiry</span>
-                <span class="app-date">07:14</span>
+          <div class="panel" aria-label="Mock produk">
+            <div class="panel-head">
+              <span>Inquiry</span>
+              <span class="muted">07:14</span>
+            </div>
+            <div class="panel-body">
+              <div class="chat">
+                <div class="bubble in">Sunrise 4 pax?<span class="ts">07:12</span></div>
+                <div class="bubble out">OK · 04:30 · DP<span class="ts">07:14</span></div>
               </div>
-              <div class="inquiry-card">
-                <div class="inquiry-chat" aria-hidden="true">
-                  <div class="bubble in">Sunrise 4 pax?<span class="ts">07:12</span></div>
-                  <div class="bubble out">OK · 04:30 · DP<span class="ts">07:14</span></div>
-                </div>
-                <dl class="inquiry-meta slim">
-                  <div><dt>Jam</dt><dd>04:30</dd></div>
-                  <div><dt>Pax</dt><dd>4</dd></div>
-                  <div><dt>DP</dt><dd class="mono">Rp 450rb</dd></div>
-                </dl>
-                <span class="chip chip-wait">Menunggu DP</span>
+              <div class="meta-row">
+                <span><em>Jam</em> 04:30</span>
+                <span><em>Pax</em> 4</span>
+                <span><em>DP</em> <span class="mono">Rp 450rb</span></span>
               </div>
-              <div class="app-bar sub">
+              <div class="panel-head sub">
                 <span>Roster lunas</span>
-                <span class="app-date">18 Sep</span>
+                <span class="muted">18 Sep</span>
               </div>
-              <ul class="roster-list compact">
-                <li>
-                  <div>
-                    <strong>Ayu</strong>
-                    <span>04:30 · 4 pax</span>
-                  </div>
-                  <span class="chip chip-paid">Lunas</span>
-                </li>
-                <li>
-                  <div>
-                    <strong>Marcus</strong>
-                    <span>09:00 · 2 pax</span>
-                  </div>
-                  <span class="chip chip-paid">Lunas</span>
-                </li>
+              <ul class="roster">
+                <li><span>Ayu · 04:30 · 4</span><span class="tag">Lunas</span></li>
+                <li><span>Marcus · 09:00 · 2</span><span class="tag">Lunas</span></li>
               </ul>
             </div>
           </div>
@@ -112,60 +81,35 @@
       </div>
     </section>
 
-    <section class="band band-segments" aria-label="Segmen">
+    <section class="band">
       <div class="wrap segments reveal">
         <span>Day trips</span>
-        <span aria-hidden="true">·</span>
         <span>Private</span>
-        <span aria-hidden="true">·</span>
         <span>Dive</span>
-        <span aria-hidden="true">·</span>
         <span>Activity desk</span>
       </div>
     </section>
 
-    <section class="section section-alt" id="how">
-      <div class="wrap">
-        <p class="section-kicker reveal">Cara kerja</p>
+    <section class="section" id="how">
+      <div class="wrap narrow">
+        <p class="eyebrow reveal">Cara kerja</p>
         <h2 class="reveal">Tiga langkah.</h2>
-        <div class="frames">
-          <article class="frame reveal">
-            <div class="frame-screen" aria-hidden="true">
-              <div class="msg in">4 pax · 04:30?</div>
-              <div class="msg out">OK · DP ya</div>
-            </div>
-            <h3>1. Inquiry</h3>
-            <p>Jam, pax, DP dari chat.</p>
-          </article>
-          <article class="frame reveal delay">
-            <div class="frame-screen pay" aria-hidden="true">
-              <span class="pay-label">QRIS DP</span>
-              <strong class="mono">Rp 450.000</strong>
-              <span class="chip chip-wait">Menunggu</span>
-            </div>
-            <h3>2. QRIS</h3>
-            <p>Menunggu atau lunas.</p>
-          </article>
-          <article class="frame reveal delay-2">
-            <div class="frame-screen roster" aria-hidden="true">
-              <div class="mini"><i></i><span class="chip chip-paid">Lunas</span></div>
-              <div class="mini"><i></i><span class="chip chip-paid">Lunas</span></div>
-            </div>
-            <h3>3. Roster</h3>
-            <p>Yang sudah bayar saja.</p>
-          </article>
-        </div>
-        <div class="trust-row reveal" aria-label="Fokus produk">
-          <span class="trust-chip">QRIS</span>
-          <span class="trust-chip">WA-first</span>
-          <span class="trust-chip">Roster lunas</span>
+        <ol class="steps">
+          <li class="reveal"><strong>Inquiry</strong> — jam, pax, DP dari chat.</li>
+          <li class="reveal delay"><strong>QRIS</strong> — menunggu atau lunas.</li>
+          <li class="reveal delay-2"><strong>Roster</strong> — yang sudah bayar saja.</li>
+        </ol>
+        <div class="trust reveal">
+          <span>QRIS</span>
+          <span>WA-first</span>
+          <span>Roster lunas</span>
         </div>
       </div>
     </section>
 
-    <section class="section faq-section" id="faq">
-      <div class="wrap">
-        <p class="section-kicker reveal">FAQ</p>
+    <section class="section section-muted" id="faq">
+      <div class="wrap narrow">
+        <p class="eyebrow reveal">FAQ</p>
         <h2 class="reveal">Pertanyaan</h2>
         <div class="faq">
           <details class="reveal">
@@ -188,25 +132,11 @@
       </div>
     </section>
 
-    <section class="section cta-section" id="cta">
-      <div class="wrap cta-card reveal">
-        <div class="cta-with-mascot">
-          <svg class="mascot-svg mascot-sm" viewBox="0 0 120 140" width="56" height="66" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <ellipse cx="52" cy="78" rx="28" ry="32" fill="#F5F0E8" stroke="#1C1917" stroke-width="2.5"/>
-            <circle cx="58" cy="42" r="20" fill="#FFFCF7" stroke="#1C1917" stroke-width="2.5"/>
-            <path d="M48 28 Q52 12 58 26 Q64 10 70 28" fill="#F59E0B" stroke="#1C1917" stroke-width="2" stroke-linejoin="round"/>
-            <path d="M76 44 L88 46 L76 50 Z" fill="#F59E0B" stroke="#1C1917" stroke-width="1.5"/>
-            <circle cx="64" cy="40" r="3.2" fill="#1C1917"/>
-            <rect x="78" y="68" width="36" height="44" rx="6" fill="#FFFFFF" stroke="#1C1917" stroke-width="2"/>
-            <circle cx="104" cy="98" r="8" fill="#22C55E" stroke="#1C1917" stroke-width="1.5"/>
-            <path d="M100 98 L103 101 L109 94" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-          <div>
-            <h2>Akses awal lewat WhatsApp</h2>
-            <p>Self-serve belum dibuka.</p>
-          </div>
-        </div>
-        <button type="button" class="btn btn-wa btn-lg btn-disabled" disabled aria-disabled="true">WhatsApp segera</button>
+    <section class="section cta">
+      <div class="wrap cta-inner reveal">
+        <h2>Akses awal lewat WhatsApp</h2>
+        <p>Self-serve belum dibuka.</p>
+        <button type="button" class="btn btn-dark btn-disabled" disabled aria-disabled="true">WhatsApp segera</button>
       </div>
     </section>
   </main>
@@ -214,22 +144,21 @@
   <footer class="site-footer">
     <div class="wrap footer-inner">
       <span>© <span id="year">2026</span> HariOps</span>
-      <a href="DESIGN.md">DESIGN.md</a>
+      <a href="DESIGN.md">Design</a>
     </div>
   </footer>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (reduce) {
-      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
-    } else {
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (e) {
-          if (e.isIntersecting) e.target.classList.add('is-in');
-        });
-      }, { threshold: 0.12 });
-      document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
-    }
+    document.querySelectorAll('.reveal').forEach(function (el) {
+      if (reduce) el.classList.add('is-in');
+      else {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) { if (e.isIntersecting) e.target.classList.add('is-in'); });
+        }, { threshold: 0.12 });
+        io.observe(el);
+      }
+    });
   </script>
 </body>
 </html>
